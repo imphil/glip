@@ -71,6 +71,9 @@
  * GLIP backend context for the TCP backend
  */
 struct glip_backend_ctx {
+    /** TCP communication thread */
+    pthread_t tcp_com_thread;
+
     /** socket fd of the data channel */
     int data_sfd;
 
